@@ -1,0 +1,45 @@
+local Players = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+local Highlight = Instance.new("Highlight")
+Highlight.Name = "Highlight"
+
+local localPlayer = Players.LocalPlayer
+local localTeam = localPlayer.Team
+
+local highlightingEnabled = false -- Başlangıçta kapalı
+
+function ToggleHighlighting()
+    highlightingEnabled = not highlightingEnabled
+    if highlightingEnabled then
+        print("Vurgulama açıldı")
+        for _, player in pairs(Players:GetPlayers()) do
+            if player ~= localPlayer and player.Team ~= localTeam then
+                local character = player.Character
+                if character and not character:FindFirstChild("HumanoidRootPart"):FindFirstChild("Highlight") then
+                    local HighlightClone = Highlight:Clone()
+                    HighlightClone.Adornee = character
+                    HighlightClone.Parent = character:FindFirstChild("HumanoidRootPart")
+                    HighlightClone.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+                    HighlightClone.Name = "Highlight"
+                end
+            end
+        end
+    else
+        print("Vurgulama kapatıldı")
+        for _, player in pairs(Players:GetPlayers()) do
+            local character = player.Character
+            if character then
+                local highlight = character:FindFirstChild("HumanoidRootPart"):FindFirstChild("Highlight")
+                if highlight then
+                    highlight:Destroy()
+                end
+            end
+        end
+    end
+end
+
+UserInputService.InputBegan:Connect(function(input)
+    if input.KeyCode == Enum.KeyCode.T then
+        ToggleHighlighting()
+    end
+end)
