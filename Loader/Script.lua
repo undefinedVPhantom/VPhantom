@@ -33,7 +33,7 @@ local Window = Rayfield:CreateWindow({
  local execTime = ""
 
  --MAIN
- local Main = Window:CreateTab("Main", 14629728411)
+ local Main = Window:CreateTab("Main", 11322155020)
  local Paragraph = Main:CreateParagraph({Title = "Message from wasundefined", Content = "Thank you for using VPhantom. We appreciate it."})
  
  local Label = Main:CreateLabel("")
