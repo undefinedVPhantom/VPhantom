@@ -7,7 +7,7 @@ local Window = Rayfield:CreateWindow({
     LoadingTitle = "VPhantom | Modern & Smooth",
     LoadingSubtitle = "by wasundefined",
     ConfigurationSaving = {
-       Enabled = true,
+       Enabled = false,
        FolderName = nil, 
        FileName = "VPhantomSave"
     },
