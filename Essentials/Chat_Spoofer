@@ -4,7 +4,7 @@ local SubmitButton
 local UI =
     Material.Load(
         {
-            Title = "Chat Spoofer",
+            Title = "★ VPhantom | Chat Spoofer",
             Style = 2,
             SizeX = 400,
             SizeY = 220,
@@ -15,7 +15,7 @@ local UI =
 local Page =
     UI.New(
         {
-            Title = "Main"
+            Title = "Spoofer"
         }
     )
 
@@ -24,7 +24,7 @@ local Page =
 local OwnMessage =
     Page.TextField(
         {
-            Text = "Own message",
+            Text = "Your message.",
             Callback = function(value)
                 SubmitButton:SetText("Send (" .. CheckCount() .. "/39)")
             end,
@@ -43,7 +43,7 @@ local OwnMessage =
 local SpoofName =
     Page.TextField(
         {
-            Text = "Name to spoof",
+            Text = "Username to Spoof.",
             Callback = function(value)
                 SubmitButton:SetText("Send (" .. CheckCount() .. "/39)")
             end,
@@ -51,7 +51,7 @@ local SpoofName =
                 Information = function(self)
                     UI.Banner(
                         {
-                            Text = "The name between the brackets, like \"Roblox\" or \"Server\"."
+                            Text = "The victims username. Example : Roblox, Builderman."
                         }
                     )
                 end
@@ -62,7 +62,7 @@ local SpoofName =
 local SpoofMessage =
     Page.TextField(
         {
-            Text = "Spoof message",
+            Text = "Spoofed message.",
             Callback = function(value)
                 SubmitButton:SetText("Send (" .. CheckCount() .. "/39)")
             end,
@@ -70,7 +70,7 @@ local SpoofMessage =
                 Information = function(self)
                     UI.Banner(
                         {
-                            Text = "The message that the victim will say."
+                            Text = "The message that the spoofed user will say."
                         }
                     )
                 end
