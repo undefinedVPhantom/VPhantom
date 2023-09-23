@@ -16,7 +16,7 @@ local Window = Rayfield:CreateWindow({
        Invite = "noinvitelink", 
        RememberJoins = true 
     },
-    KeySystem = false, 
+    KeySystem = true, 
     KeySettings = {
        Title = "VPhantom | Modern & Smooth",
        Subtitle = "Script Status : Down",
