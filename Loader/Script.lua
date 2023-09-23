@@ -24,7 +24,7 @@ local Window = Rayfield:CreateWindow({
        FileName = "Key", 
        SaveKey = false, 
        GrabKeyFromSite = false, 
-       Key = {"w1s3132dgg2h23312312f32213"} 
+       Key = {"1s3132dgg2h23312312f32213"} 
     }
  })
 
