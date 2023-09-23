@@ -3,8 +3,8 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 --WINDOW
 local Window = Rayfield:CreateWindow({
-    Name = "VPhantom | Loader",
-    LoadingTitle = "VPhantom | Modern & Smooth",
+    Name = "★ VPhantom | Loader",
+    LoadingTitle = "★ VPhantom | Modern & Smooth",
     LoadingSubtitle = "by wasundefined",
     ConfigurationSaving = {
        Enabled = false,
