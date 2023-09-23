@@ -39,19 +39,19 @@ local Window = Rayfield:CreateWindow({
  local Button = V:CreateButton({
     Name = "VPhantom | Free",
     Callback = function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/undefinedVPhantom/VPhantom/main/Versions/Free'))
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/undefinedVPhantom/VPhantom/main/Versions/Free'))()
     end,
  })
  local Button = V:CreateButton({
     Name = "VPhantom | Premium",
     Callback = function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/undefinedVPhantom/VPhantom/main/Versions/Premium'))
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/undefinedVPhantom/VPhantom/main/Versions/Premium'))()
     end,
  })
  local Button = V:CreateButton({
     Name = "VPhantom | Admin",
     Callback = function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/undefinedVPhantom/VPhantom/main/Versions/Admin'))
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/undefinedVPhantom/VPhantom/main/Versions/Admin'))()
     end,
  })
  local Section = V:CreateSection("Information About Versions")
