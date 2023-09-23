@@ -1,0 +1,3 @@
+Players = game:GetService("Players")
+TeleportService = game:GetService("TeleportService")
+TeleportService:TeleportToPlaceInstance(game.PlaceId, game.JobId, Players.LocalPlayer)
